@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "ficha-treino",
+  "compatibility_date": "2025-12-31",
+  "pages_build_output_dir": ".",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ficha_treino_db",
+      "database_id": "778c9d34-f5ef-454a-b76e-985bff50d676"
+    }
+  ]
+}
+

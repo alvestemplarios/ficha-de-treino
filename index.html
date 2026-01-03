@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ficha de Treino • Alves</title>
+
+  <link rel="stylesheet" href="./style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
+
+  <!-- NOVO: biblioteca -->
+  <script src="./exercise_library.js"></script>
+
+  <script defer src="./app.js"></script>
+</head>
+
+<body>
+  <!-- (resto do seu HTML igual) -->
+
+  <!-- ... (tudo igual até a seção de Treinos) ... -->
+
+  <!-- Dentro do "Adicionar exercício (biblioteca)" substitua por este bloco: -->
+  <!-- Add Exercise -->
+  <div class="cardSubTitle">➕ Adicionar exercício (biblioteca)</div>
+  <div class="formGrid">
+    <div class="field">
+      <label>Grupo muscular</label>
+      <select id="ex_group"></select>
+    </div>
+
+    <div class="field col2">
+      <label>Buscar (filtra a lista)</label>
+      <input id="ex_search" placeholder="Ex.: supino, rosca, remada..." />
+    </div>
+
+    <div class="field col2">
+      <label>Exercício</label>
+      <select id="ex_name"></select>
+    </div>
+
+    <div class="field">
+      <label>Séries</label>
+      <input id="ex_sets" inputmode="numeric" placeholder="Ex.: 4" />
+    </div>
+
+    <div class="field">
+      <label>Reps</label>
+      <input id="ex_reps" placeholder="Ex.: 8-12" />
+    </div>
+
+    <div class="field">
+      <label>Carga (kg)</label>
+      <input id="ex_weight" inputmode="decimal" placeholder="Ex.: 60" />
+    </div>
+
+    <div class="field col2">
+      <label>Novo exercício (se não existir na lista)</label>
+      <input id="ex_custom" placeholder="Ex.: Supino reto com halter na máquina X..." />
+      <div class="rowBtns" style="margin-top:10px">
+        <button class="btn" id="btnAddToLibrary">📚 Adicionar à biblioteca</button>
+        <button class="btn primary" id="btnAddExercise">➕ Adicionar ao treino</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ... (resto do HTML igual) ... -->
+</body>
+</html>

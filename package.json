@@ -1,0 +1,14 @@
+{
+  "name": "ficha-treino",
+  "private": true,
+  "version": "1.0.0",
+  "devDependencies": {
+    "wrangler": "^4.54.0"
+  },
+  "scripts": {
+    "dev": "wrangler pages dev .",
+    "db:local": "wrangler d1 execute ficha_treino_db --local --file=./schema.sql",
+    "db:remote": "wrangler d1 execute ficha_treino_db --remote --file=./schema.sql",
+    "deploy": "wrangler pages deploy ."
+  }
+}
